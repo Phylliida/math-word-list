@@ -1,0 +1,7 @@
+Use case:
+I'm writing a math paper and don't want to ignore extra 600 terms
+Disclude software packages and specific variable names/commands
+Keep names that have a wiki page
+Math notation is not allowed (like acos) since hunspell ignores in math brackets
+Don't need plurals we will tag those seperately
+No first names

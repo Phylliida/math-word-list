@@ -1,0 +1,42 @@
+SET UTF-8
+
+# S: regular plural, add -s
+SFX S Y 1
+SFX S 0 s .
+
+# E: plural for words ending in s/x/z/sh/ch, add -es
+SFX E Y 1
+SFX E 0 es .
+
+# Y: plural for words ending in consonant+y, -y → -ies
+SFX Y Y 1
+SFX Y y ies [^aeiou]y
+
+# L: adverb form, add -ly
+SFX L Y 2
+SFX L 0 ly [^l]
+SFX L 0 ly ll
+
+# D: past tense
+SFX D Y 3
+SFX D e ed [^aeiou]e
+SFX D 0 d e
+SFX D 0 ed [^e]
+
+# G: gerund, add -ing
+SFX G Y 3
+SFX G e ing [^aeiou]e
+SFX G 0 ing [^e]
+SFX G 0 ing e
+
+# U: Latin -um → -a (extremum → extrema)
+SFX U Y 1
+SFX U um a um
+
+# O: Greek -on → -a (dodecahedron → dodecahedra)
+SFX O Y 1
+SFX O on a on
+
+# X: Latin -ix → -ices (directrix → directrices)
+SFX X Y 1
+SFX X ix ices ix
