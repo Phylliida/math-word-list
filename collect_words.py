@@ -411,7 +411,7 @@ def find_tex_files(paths):
         if p.is_file() and p.suffix == ".tex":
             files.append(p)
         elif p.is_dir():
-            files.extend(sorted(p.rglob("*.tex")))
+            files.extend(sorted(p.rglob("ALCO_*.tex"))) #specialized for alco dataset.
         else:
             print(f"Warning: skipping {p}", file=sys.stderr)
     return files
