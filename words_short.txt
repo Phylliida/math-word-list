@@ -2,7 +2,6 @@ AMS
 gcd
 GCD
 gcds
-je
 jeu
 lcm
 LHS
@@ -11,7 +10,6 @@ OPAC
 PDE
 pdf
 PID
-pre
 RHS
 RSK
 SNF
